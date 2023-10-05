@@ -27,17 +27,17 @@ The proposed library management system boasts a range of user-centric features a
 
 • Operations: List operations for each intended user (in list format).  Be precise and specific.
 Library Admin:
-Add: Add books to the library for checkout
-Remove: Remove books from the library
-Add User: Add library users
-Remove User: Remove library users
+-Add: Add books to the library for checkout
+-Remove: Remove books from the library
+-Add User: Add library users
+-Remove User: Remove library users
 
 Library Users:
-Check out: Check out books
-Check in: Return books
-Hold: Place a hold on a book being borrowed from another user
-Find: Find a specific book by title
-Filter: Sorts books by user-specified guidelines
-Alphabetize: Alphabetizes all books
-Author: Finds books by author
-Genre: Finds books by genre
+-Check out: Check out books
+-Check in: Return books
+-Hold: Place a hold on a book being borrowed from another user
+-Find: Find a specific book by title
+-Filter: Sorts books by user-specified guidelines
+-Alphabetize: Alphabetizes all books
+-Author: Finds books by author
+-Genre: Finds books by genre
