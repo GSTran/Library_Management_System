@@ -3,6 +3,7 @@ public class Book {
     String author;
     String isbn;
     Status status;
+    private Integer ownerNumber;
     public enum Status {
         BORROWED,
         ON_HOLD,
@@ -12,11 +13,21 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String author, String isbn, Status status) {
+    public Book(String title, String author, String isbn, Integer ownerNumber) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
-        this.status = status;
+        this.ownerNumber = ownerNumber;
+        if (ownerNumber == null) {
+            this.status = Status.AVAILABLE;
+        }
+        if (ownerNumber != null) {
+            this.status = Status.BORROWED;
+        }
+    }
+
+    public String toString() {
+        return this.title;
     }
 
     public String getTitle() {
@@ -49,5 +60,13 @@ public class Book {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public Integer getOwnerNumber() {
+        return ownerNumber;
+    }
+
+    public void setOwnerNumber(Integer ownerNumber) {
+        this.ownerNumber = ownerNumber;
     }
 }
