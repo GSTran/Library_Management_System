@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -62,6 +64,19 @@ public class BookViewGUI {
         /**
          * TODO: Implement listeners for all the buttons
          */
+
+        // This listener is fired everytime the user clicks an entry on the list
+        // we can use this to update the text fields based on the selected list item.
+        displayList.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+
+                }
+            }
+        });
+
+
         editBookButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
