@@ -44,6 +44,7 @@ public class UserViewGUI {
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
 
+
                 }
             }
         });
