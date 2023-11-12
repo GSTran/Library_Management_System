@@ -30,7 +30,8 @@ public class MainScreenGUI {
         userCollectionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                UserViewGUI userViewGUI = new UserViewGUI();
+                frame.dispose();
             }
         });
 

@@ -100,8 +100,4 @@ public class LoginGUI extends JFrame {
 
         return  register;
     }
-
-    public static void main(String[] args) {
-        LoginGUI loginPage = new LoginGUI();
-    }
 }
