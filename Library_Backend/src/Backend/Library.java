@@ -10,7 +10,7 @@ import java.util.Random;
 import java.util.StringTokenizer;
 
 public class Library {
-    public LinkedList<User> users;
+    public LinkedList<User> users; //List of users
     public LinkedList<Book> books;
     private static Library uniqueInstance;
 
