@@ -1,4 +1,4 @@
-package ExceptionsPack;
+package Library_Backend.ExceptionsPack;
 
 public class OverdueBooksCheckoutException extends CheckoutExceptions{
     public OverdueBooksCheckoutException() {

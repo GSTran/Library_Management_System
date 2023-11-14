@@ -1,16 +1,19 @@
+package GUIPages;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import Control.Control;
 
 public class LoginGUI extends JFrame {
-    private JTextField usernameText;
-    private JTextField passwordText;
+    final JTextField usernameText = new JTextField();
+    final JTextField passwordText = new JTextField();
     private JButton registerButton;
     private JButton loginButton;
     private JLabel usernameLabel;
     private JLabel passWordLabel;
     private JLabel icon;
+    
     public LoginGUI() {
         // Set name and close operation
         setName("Library Manager - Login");
@@ -43,11 +46,9 @@ public class LoginGUI extends JFrame {
         passWordLabel.setBounds(50,180,100,40);
         add(passWordLabel);
 
-        usernameText = new JTextField();
         usernameText.setBounds(140,160,100,20);
         add(usernameText);
 
-        passwordText = new JTextField();
         passwordText.setBounds(140,190,100,20);
         add(passwordText);
 
@@ -76,7 +77,7 @@ public class LoginGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Add login check logic here
-
+            	
                 // If login successful do code below
                 MainScreenGUI mainScreenGUI = new MainScreenGUI();
                 dispose();
@@ -94,7 +95,12 @@ public class LoginGUI extends JFrame {
         register.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            	if(usernameText.getText().isEmpty()|| passwordText.getText().isEmpty()) {
+            		JOptionPane.showMessageDialog(null, "Please fill all values");
+            	}else {
+            		Control control = new Control();
+            		control.addUser(usernameText.getText(),passwordText.getText());
+            	}
             }
         });
 

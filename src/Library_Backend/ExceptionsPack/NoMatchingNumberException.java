@@ -1,4 +1,4 @@
-package ExceptionsPack;
+package Library_Backend.ExceptionsPack;
 
 public class NoMatchingNumberException extends LoginException{
     public NoMatchingNumberException() {

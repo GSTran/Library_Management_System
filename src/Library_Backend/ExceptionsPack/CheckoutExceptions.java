@@ -1,4 +1,4 @@
-package ExceptionsPack;
+package Library_Backend.ExceptionsPack;
 
 public class CheckoutExceptions extends Exception{
     public CheckoutExceptions(String message) {
