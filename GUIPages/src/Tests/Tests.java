@@ -33,7 +33,7 @@ public class Tests {
         library.addUser("John", "P@ssword1");
         library.addUser("Bon", "P4ssword!");
 
-        assertEquals(true, library.validateLogin(library.users.get(0).getLibraryNum(), "P@ssword1"));
+        assertEquals(true, library.validateLogin(library.users.get(0).getUserName(), "P@ssword1"));
         library = null;
     }
 }

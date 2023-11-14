@@ -85,8 +85,8 @@ public class Library {
         }
     }
 
-    public boolean validateLogin(int libraryNum, String password) {
-        User account = this.findUser(libraryNum);
+    public boolean validateLogin(String userName, String password) {
+        User account = this.findUser(userName);
         if (account == null) {
             return false;
         }
@@ -100,10 +100,10 @@ public class Library {
         }
     }
 
-    private User findUser(int libraryNum) {
+    private User findUser(String userName) {
         try {
             for (int i = 0; i < users.size(); i++) {
-                if (libraryNum == this.users.get(i).libraryNum)
+                if (userName == this.users.get(i).userName)
                     return this.users.get(i);
             }
             throw new NoMatchingNumberException();
