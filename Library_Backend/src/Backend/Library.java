@@ -1,14 +1,17 @@
+package Backend;
+
 import ExceptionsPack.LoginException;
 import ExceptionsPack.NoMatchingNumberException;
 import ExceptionsPack.PasswordNotValidException;
 
 import java.io.*;
 import java.util.LinkedList;
+import java.util.Random;
 import java.util.StringTokenizer;
 
 public class Library {
-    LinkedList<User> users;
-    LinkedList<Book> books;
+    public LinkedList<User> users;
+    public LinkedList<Book> books;
     private static Library uniqueInstance;
 
     private Library() {
@@ -61,6 +64,7 @@ public class Library {
         }
         this.users = accounts;
     }
+
     public void saveUsers(String filename) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (User storedAccount : users)
@@ -109,8 +113,8 @@ public class Library {
         }
     }
 
-    public void addUser(String name, int libraryNum, String password) {
-        users.add(new User(name, libraryNum, password));
+    public void addUser(String name, String password) {
+        users.add(new User(name, this.generateRandomNumber(), password));
     }
 
     public void addBook(String title, String author, String isbn, Integer ownerNumber) {
@@ -147,5 +151,17 @@ public class Library {
                 return this.books.get(i);
         }
         return null;
+    }
+
+
+    public int generateRandomNumber() {
+        Random random = new Random();
+        // Generate a random int within the range of 100,000,00 to 999,999,99
+        int min = 10000000;
+        int max = 99999999;
+
+        // Calculate the range and add the minimum value to the result
+        int range = max - min + 1;
+        return random.nextInt(range) + min;
     }
 }
