@@ -1,3 +1,5 @@
+package Backend;
+
 import ExceptionsPack.BookNotAvailableException;
 import ExceptionsPack.CheckoutExceptions;
 import ExceptionsPack.OverdueBooksCheckoutException;
@@ -11,10 +13,10 @@ public class User {
     LinkedList<Book> borrowedBooks;
     private boolean hasOverdueBooks;
 
-    User() {
+    public User() {
     }
 
-    User(String name, int libraryNum, String password) {
+    public User(String name, int libraryNum, String password) {
         this.userName = name;
         this.libraryNum = libraryNum;
         this.password = password;
@@ -48,5 +50,41 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public int getLibraryNum() {
+        return libraryNum;
+    }
+
+    public void setLibraryNum(int libraryNum) {
+        this.libraryNum = libraryNum;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public LinkedList<Book> getBorrowedBooks() {
+        return borrowedBooks;
+    }
+
+    public void setBorrowedBooks(LinkedList<Book> borrowedBooks) {
+        this.borrowedBooks = borrowedBooks;
+    }
+
+    public boolean isHasOverdueBooks() {
+        return hasOverdueBooks;
+    }
+
+    public void setHasOverdueBooks(boolean hasOverdueBooks) {
+        this.hasOverdueBooks = hasOverdueBooks;
     }
 }
