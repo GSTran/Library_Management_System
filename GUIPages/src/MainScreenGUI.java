@@ -8,6 +8,8 @@ public class MainScreenGUI {
     private JPanel panel1;
     private JButton logoutButton;
     private JButton userCollectionButton;
+    private JLabel imageLabel;
+
     public MainScreenGUI() {
         JFrame frame = new JFrame();
         frame.add(panel1);
@@ -18,6 +20,10 @@ public class MainScreenGUI {
 
         // Set minimum dimensions
         frame.setMinimumSize(new Dimension(400,400));
+
+        ImageIcon imgIcon = new ImageIcon("GUIPages/books.png");
+        Image scaledImage = imgIcon.getImage().getScaledInstance(140,140,Image.SCALE_DEFAULT);
+        imageLabel.setIcon(new ImageIcon(scaledImage));
 
         bookCollectionButton.addActionListener(new ActionListener() {
             @Override

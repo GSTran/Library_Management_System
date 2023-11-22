@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca28a3fa-5ee2-4712-bf63-26c545cac91d" name="Changes" comment="" />
+    <list default="true" id="edfe8a5c-a4e4-4720-b53d-31e0f0cac423" name="Changes" comment="Adding untracked files">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS151-Library_Management_System-gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS151-Library_Management_System-gui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIPages/src/LoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUIPages/src/LoginGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIPages/src/MainScreenGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/GUIPages/src/MainScreenGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIPages/src/MainScreenGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUIPages/src/MainScreenGUI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Y9dpQCn8uZeIlY3rA6C0gjCfJd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,6 +30,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",

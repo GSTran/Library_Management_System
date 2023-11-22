@@ -5,19 +5,20 @@ import java.awt.event.ActionListener;
 
 public class LoginGUI extends JFrame {
     private JTextField usernameText;
-    private JTextField passwordText;
+    private JPasswordField passwordText;
     private JButton registerButton;
     private JButton loginButton;
     private JLabel usernameLabel;
     private JLabel passWordLabel;
     private JLabel icon;
+
     public LoginGUI() {
         // Set name and close operation
         setName("Library Manager - Login");
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         // Set minimum dimensions and layout
-        setMinimumSize(new Dimension(400,400));
+        setMinimumSize(new Dimension(400,300));
 
         // Add buttons and other elements
         initializeElements();
@@ -28,43 +29,52 @@ public class LoginGUI extends JFrame {
     }
 
     public void initializeElements() {
+
+        setLayout(new GridLayout(3,3));
+
+        JPanel space = new JPanel();
+        add(space);
+
         ImageIcon imgIcon = new ImageIcon("GUIPages/books.png");
-        Image scaledImage = imgIcon.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT);
+        Image scaledImage = imgIcon.getImage().getScaledInstance(140,140,Image.SCALE_DEFAULT);
 
         icon = new JLabel(new ImageIcon(scaledImage));
-        icon.setBounds(120,0,150,150);
         add(icon);
 
-        usernameLabel = new JLabel("Username:");
-        usernameLabel.setBounds(50,150,100,40);
+        JPanel space2 = new JPanel();
+        add(space2);
+
+        usernameLabel = new JLabel("Username: ");
+        usernameLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+        usernameLabel.setVerticalAlignment(SwingConstants.TOP);
         add(usernameLabel);
 
-        passWordLabel = new JLabel("Password:");
-        passWordLabel.setBounds(50,180,100,40);
-        add(passWordLabel);
-
         usernameText = new JTextField();
-        usernameText.setBounds(140,160,100,20);
-        add(usernameText);
-
-        passwordText = new JTextField();
-        passwordText.setBounds(140,190,100,20);
-        add(passwordText);
+        JPanel usernameTextPanel = new JPanel();
+        usernameText.setPreferredSize(new Dimension(100,30));
+        usernameTextPanel.add(usernameText);
+        add(usernameTextPanel);
 
         registerButton = CreateRegisterButton();
         JPanel registerPanel = new JPanel();
         registerPanel.add(registerButton);
-        registerPanel.setBounds(140,220,90,35);
         add(registerPanel);
+
+        passWordLabel = new JLabel("Password: ");
+        passWordLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+        passWordLabel.setVerticalAlignment(SwingConstants.TOP);
+        add(passWordLabel);
+
+        passwordText = new JPasswordField();
+        JPanel passwordTextPanel = new JPanel();
+        passwordText.setPreferredSize(new Dimension(100,30));
+        passwordTextPanel.add(passwordText);
+        add(passwordTextPanel);
 
         loginButton = CreateLoginButton();
         JPanel loginPanel = new JPanel();
         loginPanel.add(loginButton);
-        loginPanel.setBounds(140,270,90,35);
         add(loginPanel);
-
-        JPanel space = new JPanel();
-        add(space);
     }
 
     /**
