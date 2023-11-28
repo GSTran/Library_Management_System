@@ -60,7 +60,7 @@ public class UserViewGUI {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                    User user = (User) defaultListModel.get(e.getLastIndex());
+                    User user = (User) defaultListModel.get(displayList.getSelectedIndex());
                     usernameText.setText(user.getUserName());
                     passwordText.setText(user.getPassword());
                     libraryNumText.setText(Integer.toString(user.getLibraryNum()));
@@ -98,6 +98,7 @@ public class UserViewGUI {
         editUserButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (displayList.getSelectedIndex() == -1) return;
                 //Allows admins to change user info and set or delete new Admins
                 User user = library.getUser(Integer.parseInt(libraryNumText.getText()));
                 if(adminStatusText.getText().equals("1")){
