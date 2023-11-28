@@ -171,6 +171,7 @@ public class BookViewGUI {
         editBookButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (displayList.getSelectedIndex() == -1) return;
                 //Allows user to edit books information, this is saved to the library's list's information
                 finalLibrary.getBook(textField3.getText()).change(textField2.getText(),textField1.getText(),textField3.getText(), finalLibrary.getBook(0).getOwnerNumber());
                 frame.revalidate();
@@ -198,6 +199,7 @@ public class BookViewGUI {
         borrowBookButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (displayList.getSelectedIndex() == -1) return;
                 //Allows user to borrow books, works by changing book's status
                 if(finalLibrary.getBook(textField3.getText()).getStatus() == Book.Status.BORROWED){
                     JOptionPane.showMessageDialog(null, "That book is borrowed!");
@@ -212,6 +214,7 @@ public class BookViewGUI {
         returnBookButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (displayList.getSelectedIndex() == -1) return;
                 //Allows user to return books, this change is made in the libraries list
                 if (finalLibrary.getUser().returnBook(finalLibrary.getBook(textField3.getText()))) {
                     JOptionPane.showMessageDialog(null, "Thanks for returning!" + " " +
