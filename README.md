@@ -103,69 +103,88 @@ https://github.com/GSTran/CS151-Library_Management_System/tree/1a1461ff667f6784c
 
 Snapshot of the running program:
 Login Page
+
 ![image26](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/271b3a32-f0c7-4303-8985-edea969d0765)
 
 Successful Registration
+
 ![image22](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/478f2647-0365-440a-b76a-cf5aaee61514)
 
 Admin Main Screen
+
 ![image11](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/8f2003b5-2f47-40a0-bc0f-c7f8281993ec)
 
 User Main Screen
+
 ![image25](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/4171f591-017c-4dd1-a756-1d08e4e82e05)
 
 Logout
+
 ![image7](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/3e95b630-ae0d-4208-9a1f-d314412bdc7c)
 
 Admin Book Screen
+
 ![image3](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/4e3ca6c7-c55f-4d46-a5f1-e915b6cc6346)
 
 Editing (Changing BookC to BookD)
+
 ![image6](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/a34ec5d3-0682-4558-9da0-51ca54d0f0fa)
 
 ![image10](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/13b80a07-3c8d-4293-ad90-338fe8520b70)
 ![image15](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/995f16b6-932c-4bdb-acad-5d46d3974d27)
 
 Adding (Adding Book E)
+
 ![image17](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/234916c1-e1e4-487a-94ca-c6ea4fbe77fc)
 ![image9](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/e5780ef5-1b1d-4cc9-8f8d-e7cfef177975)
 
 Remove (Removing BookA)
+
 ![image14](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/86478245-5c60-483a-a9c1-b3490da70d7b)
 ![image3](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/1d023bc3-a128-4bd3-b48f-fb910573b63f)
 
 User Book View
+
 ![image23](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/6417c3d1-91fe-4ebf-b027-2b3c73de2b2d)
 
 Sort Books
+
 ![image13](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/38769a62-6d7f-411f-9fa1-89fd1c4b3492)
 
 Search Book (Searching for BookD)
+
 ![image18](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/1a50f1de-f2d0-4d96-855e-29eb7d0033b6)
 ![image8](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/c3b1d7c8-46de-4694-88ee-79afe9d5a2b7)
 
 Borrow Book (Borrowing BookE)
+
 ![image2](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/9c336031-78c6-48f9-9827-55c83492d1fb)
 ![image16](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/d1f82950-745d-4334-8526-d350b3fb7bde)
 
 Return Book
+
 ![image19](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/f7fd6db5-475d-4f10-912e-427067539365)
 
 View All Books
+
 ![image12](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/f6ce2557-8d9a-444e-b3f1-f7232390788f)
 
 Admin User View Screen
+
 ![image20](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/5b905a71-74fc-4ccf-8e42-4cb8cdfc93c9)
 
 Add User
+
 ![image5](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/02ad6b56-0711-4713-b124-d2d9195268dd)
 ![image1](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/2a03be5c-c243-48b4-b6c7-59c601127568)
 
 Edit User
+
 ![image4](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/dcfe224a-72ee-4f0c-a306-628adde07596)
 ![image21](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/2e331eeb-468f-454f-826e-fd866fce3fcd)
 
 Remove User
+
 ![image24](https://github.com/GSTran/CS151-Library_Management_System/assets/99845815/bccc25d8-70af-48d3-973b-dbb92e65ea2b)
 
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
